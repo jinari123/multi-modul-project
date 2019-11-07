@@ -1,0 +1,15 @@
+syntax="proto3";
+package proto.entity;
+
+option java_package="com.temp.rpc.entity";
+option java_outer_classname="LanguageEntity";
+
+import "entity/game.proto";
+
+message Language {
+    int32 id = 1;
+    Game game = 2;
+    int32 type = 3;
+    string name = 4;
+    string description = 5;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto.service;
+
+option java_package = "com.temp.rpc.service";
+
+import "entity/promotion.proto";
+import "form/idxForm.proto";
+
+service PromotionRoute {
+
+    rpc getPromotion (form.IdxForm) returns (entity.Promotion) {}
+
+    rpc getPromotions (form.IdxForm) returns (stream entity.Promotion) {}
+
+}

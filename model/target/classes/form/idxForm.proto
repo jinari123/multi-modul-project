@@ -1,0 +1,8 @@
+syntax="proto3";
+package proto.form;
+
+option java_package="com.temp.rpc.form";
+
+message IdxForm {
+    int32 id = 1;
+}

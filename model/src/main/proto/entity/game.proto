@@ -1,0 +1,13 @@
+syntax = "proto3";
+package proto.entity;
+
+option java_package = "com.temp.rpc.entity";
+option java_outer_classname = "GameEntity";
+
+message Game {
+    int32 id = 1;
+    string name = 2;
+    string title_id = 3;
+    string secret_key = 4;
+    string description = 5;
+}
